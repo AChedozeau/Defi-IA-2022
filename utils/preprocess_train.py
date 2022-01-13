@@ -166,3 +166,4 @@ def preprocess_train(workdir):
     Full_X_train.to_csv(path_train +'full_X_train.csv',sep=',')
     Full_Y_train.to_csv(path_train +'full_Y_train.csv',sep=',')
 
+preprocess_train("REPLACE WITH YOUR WORKING DIRECTORY")
