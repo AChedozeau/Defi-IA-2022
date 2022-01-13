@@ -162,3 +162,4 @@ def preprocess_test(workdir):
     Full_X_test.to_csv(path_test + 'full_X_test.csv',sep=',')
     print("Done.")
     
+preprocess_test("REPLACE WITH YOUR WORKING DIRECTORY")
