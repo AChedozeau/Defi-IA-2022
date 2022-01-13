@@ -5,16 +5,12 @@ Created on Wed Jan 12 20:44:55 2022
 
 @author: anthony
 """
-
-
 from __future__ import division
 from datetime import datetime, timedelta,date
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import datetime as dt
-
-
 
 ################################################################################
 #                                                                              #
@@ -69,7 +65,6 @@ def avg_weights(df, weights, skipna = True):
     res = weighted_df.sum(axis = 0, skipna = skipna)
     return pd.Series(res, index = df.columns)
     
-
     
 def fill_nan_row_train(row, df, id_stat, dist_mat, k_ngb):
     if row.isnull().any().item():

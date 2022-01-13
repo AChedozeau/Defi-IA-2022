@@ -6,7 +6,6 @@ Created on Wed Jan 12 20:41:25 2022
 @author: anthony
 """
 
-
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -19,7 +18,10 @@ from sklearn.metrics import pairwise_distances
 import swifter
 
 def preprocess_train(workdir):
+    
+    # Utils paths
     path_utils = workdir+'utils/'
+    
     import sys
     sys.path.insert(0, path_utils )
     from utils_preprocessing_train import remove_missing_hours,ker_Gauss, avg_weights, fill_nan_row_train, create_id
@@ -36,7 +38,7 @@ def preprocess_train(workdir):
     
     #Compute the distance matrix between each station 
     id_stations = pd.unique(new_X_station_train['number_sta'])
-    stations_coordinates=pd.read_csv('DATA_RAINFALL/Other/Other/'+"stations_coordinates.csv",sep=",",header=0)
+    stations_coordinates=pd.read_csv(workdir+'DATA_RAINFALL/Other/Other/'+"stations_coordinates.csv",sep=",",header=0)
     dist_mat =  pairwise_distances(stations_coordinates[stations_coordinates['number_sta'].isin(id_stations)][['lat','lon']])
     
     #Fill nans 
@@ -156,10 +158,11 @@ def preprocess_train(workdir):
     # Get a dataframe with both X_train and Y_train (aligned)
     X_Y = Y_train.merge(Full_X_train, on ="id")
     
-    # Separate X and Y 
+    # Separate X from Y 
     Full_Y_train = X_Y.iloc[:,:4]
     Full_X_train = X_Y.iloc[:,3:]
     
     #Save the datasets 
     Full_X_train.to_csv(path_train +'full_X_train.csv',sep=',')
     Full_Y_train.to_csv(path_train +'full_Y_train.csv',sep=',')
+

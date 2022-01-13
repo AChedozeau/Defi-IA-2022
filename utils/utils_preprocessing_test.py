@@ -5,8 +5,6 @@ Created on Wed Jan 12 20:44:55 2022
 
 @author: anthony
 """
-
-
 from __future__ import division
 from datetime import datetime, timedelta,date
 import pandas as pd
@@ -14,13 +12,11 @@ import numpy as np
 import matplotlib.pyplot as plt
 import datetime as dt
 
-
 ################################################################################
 #                                                                              #
 #                    Usefull functions to manipulate columns                   #
 #                                                                              #
 ################################################################################
-
 
 #Get the day and the hour from orignal ids in the Dataframe 
 def to_float(string):

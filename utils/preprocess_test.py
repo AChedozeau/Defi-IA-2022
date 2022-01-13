@@ -5,21 +5,20 @@ Created on Wed Jan 12 20:37:12 2022
 
 @author: anthony
 """
-
-
 from __future__ import division
 from datetime import datetime, timedelta,date
 import pandas as pd
 import numpy as np
-#matplotlib inline
 import matplotlib.pyplot as plt
 import datetime as dt
 from sklearn.metrics import pairwise_distances
 import swifter
 
-def prepocess_test(workdir):
+def preprocess_test(workdir):
+    
     # Utils paths
     path_utils = workdir+'utils/'
+    
     import sys
     sys.path.insert(0, path_utils )
     from utils_preprocessing_test import to_float,number_sta_row,get_day,ker_Gauss,avg_weights,fill_nan_row_test, create_id
@@ -77,7 +76,8 @@ def prepocess_test(workdir):
     #Compute the distance matrix betxeen each station 
     dist_mat =  pairwise_distances(stations_coordinates[stations_coordinates['number_sta'].isin(id_stations)][['lat','lon']])
     
-    #Fill nans 
+    #Fill nans ================================================================================================================
+    print("Filling nans")
     X_concat = X_concat.swifter.apply(fill_nan_row_test, args = [X_concat, id_stations, dist_mat, 10], axis = 1, result_type='broadcast')
     
     #Save file and delete unseless columns
@@ -114,10 +114,10 @@ def prepocess_test(workdir):
     
     # Get hourly features for X_arpege_2D 
     
-    #The dataframe X_arpege2D, without any nans but without hourly features !!! 
+    #The dataframe X_arpege2D, without nans and without hourly features !!! 
     X_arpege2D_test=pd.read_csv(path_test+"2D_arpege_test.csv",sep=",",header=0)
     
-    #The dataframe X_station_test, without any nans and with hourly features 
+    #The dataframe X_station_test, without nans but with hourly features 
     X_station_test= New_X_test 
     
     ### add an id column that contains station_day info from the Id and an hour column
@@ -161,3 +161,4 @@ def prepocess_test(workdir):
     print("Saving .csv file......")
     Full_X_test.to_csv(path_test + 'full_X_test.csv',sep=',')
     print("Done.")
+    
