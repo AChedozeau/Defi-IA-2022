@@ -16,6 +16,11 @@ Défi IA 2022 Kaggle - Local prediction of rainfall using data measure on ground
   - Run `preprocess_train.py` (passing your working directory in argument) to fill nans from X_station_train and Y_train, to merge X_station_train with 2D_arpege_train and then reshape the training features to hourly features (all features at each hour). Two files full_X_train.csv and full_Y_train.csv are created in the directory ./DATA_RAINFALL/Train/Train/. Preprocessing the training set is time-consumming (approximately 6 hours). 
    - Run `preprocess_test.py` (passing your working directory in argument) to fill nans from X_station_test, to merge X_station_test with 2D_arpege_test and then reshape the features to hourly features. A file full_X_test.csv is created in the directory ./DATA_RAINFALL/Test/Test/. Preprocessing the test set could last for around 30 minutes. Note that Y_test is not provided by MeteoFrance. 
   
+## training models and making predictions
+  
+  - Download the "DATA_FULL" folder from :  , or run the preprocessing part that creates it. Make sure the folder is next to `main_model.py`
+  - Run `main_model.py`, this file runs training on MLP and LGBM models, creating the prediction .csv files afterwards.
+  
   
   
   
