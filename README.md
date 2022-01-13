@@ -18,7 +18,8 @@ Défi IA 2022 Kaggle - Local prediction of rainfall using data measure on ground
   
 ## training models and making predictions
   
-  - Download the "DATA_FULL" folder from :  , or run the preprocessing part that creates it. Make sure the folder is next to `main_model.py`
+  - Download the "DATA_FULL.zip" file from :  , or run the preprocessing part that creates it. Unzip the file, make sure the folder is next to `main_model.py`. This folder
+  contains the data after preprocessing.
   - Run `main_model.py`, this file runs training on MLP and LGBM models, creating the prediction .csv files afterwards.
   
   
