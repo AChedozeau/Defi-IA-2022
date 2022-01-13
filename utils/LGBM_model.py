@@ -81,7 +81,7 @@ def modele(file1,file2,file3):
     'max_depth': 8,
     'num_leaves' : 32,
     'learning_rate' : 0.001,
-    'n_estimators' : 3000,
+    'n_estimators' : 30000,
     'min_child_samples' : 100,
     'early_stopping' : 2000,
     'reg_alpha' : 0,
