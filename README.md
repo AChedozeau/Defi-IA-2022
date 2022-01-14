@@ -13,7 +13,8 @@ This code achieved a MAPE score of 26.57 (16th/84) on the public leaderboard and
   - Run `dowload_data.sh` in your working directory. A ./DATA_RAINFALL/ directory will be created containing all the data from ground stations and Arpege.
   
   
-### Or simply : get our data folder from this link : , then unzip it in the Git folder, you should have a "DATA_RAINFALL" folder.
+### Or simply : 
+  - get our data folder from this link : , then unzip it in the Git folder, you should have a "DATA_RAINFALL" folder.
   
 ## Preprocessing the data:
   
