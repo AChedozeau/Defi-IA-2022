@@ -5,7 +5,7 @@ This code achieved a MAPE score of 26.57 (16th/84) on the public leaderboard and
 
 **You can skip to the training models part adn directly downlaod final data**
 
-## Instructions to download the data:
+## Instructions to download the data, works on linux:
 - Create your account on Kaggle
 - Get your API credentials 
 
