@@ -1,5 +1,5 @@
 # Defi-IA-2022
-Défi IA 2022 Kaggle - Local prediction of rainfall using data measure on ground stations and results from MétéoFrance predictive models (Arpège_2D).
+Défi IA 2022 Kaggle - Local prediction of rainfall using data measure on ground stations and results from MétéoFrance predictive models (Arpège_2D). This code achieved a MAPE score of 26.57 (16th/84) on the public leaderboard and the competition results were a MAPE of 30.13, ranked 27th place (private leaderboard).
 
 ## Instructions to download the data:
 - Create your account on Kaggle
@@ -16,10 +16,10 @@ Défi IA 2022 Kaggle - Local prediction of rainfall using data measure on ground
   - Run `preprocess_train.py` (passing your working directory in argument) to fill nans from X_station_train and Y_train, to merge X_station_train with 2D_arpege_train and then reshape the training features to hourly features (all features at each hour). Two files full_X_train.csv and full_Y_train.csv are created in the directory ./DATA_RAINFALL/Train/Train/. Preprocessing the training set is time-consumming (approximately 6 hours). 
    - Run `preprocess_test.py` (passing your working directory in argument) to fill nans from X_station_test, to merge X_station_test with 2D_arpege_test and then reshape the features to hourly features. A file full_X_test.csv is created in the directory ./DATA_RAINFALL/Test/Test/. Preprocessing the test set could last for around 30 minutes. Note that Y_test is not provided by MeteoFrance. 
   
-## training models and making predictions
+## Training models and making predictions
   
   - Download the "DATA_RAINFALL.zip" file from : https://drive.google.com/file/d/10xF6B2JB-cEftuSWBBWLvF_FETbXBVpc/view?usp=sharing , or run the preprocessing part that creates it. Unzip the file, make sure the folder is next to `main_model.py`. This folder contains the data after preprocessing.
-  - Run `main_model.py`, this file runs training on MLP and LGBM models, creating the prediction .csv files afterwards.
+  - Run `main_model.py`, this file runs training on MLP and LGBM models, creating the prediction .csv files afterwards. 
   
   
   
