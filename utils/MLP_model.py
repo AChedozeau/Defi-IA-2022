@@ -97,7 +97,9 @@ def modele(file1,file2,file3):
     path_baseline_test = os.path.join(path_parent,path_data).replace("/","\\")
     Baseline_obs_test = pd.read_csv(path_baseline_test+"Baseline_observation_test.csv",sep=",",header=0)
     X_station_test = pd.read_csv(path_baseline_test+"full_X_test.csv",sep=",",header=0)
-    
+   
+    workdir = sys.argv[1] 
+    output_path = sys.argv[2]
 
 
     #Scale the testing set
@@ -115,5 +117,5 @@ def modele(file1,file2,file3):
     predictions = ids.merge(pred_kaggle,on="Id")
     predictions['Prediction'] = np.round(predictions['Prediction'],1) 
     predictions.loc[predictions['Prediction']<1.0, 'Prediction']=1.0
-    predictions.to_csv(os.path.join(path_parent,'predictions_MLP_means.csv'),sep=',',index=False)#changer le path
+    predictions.to_csv(os.path.join(output_path,'predictions_MLP_means.csv'),sep=',',index=False)#changer le path
     print(a)
