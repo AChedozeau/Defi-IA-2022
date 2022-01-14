@@ -3,7 +3,7 @@ Défi IA 2022 Kaggle - Local prediction of rainfall using data measure on ground
 
 This code achieved a MAPE score of 26.57 (16th/84) on the public leaderboard and the competition results were a MAPE of 30.13, ranked 27th place (private leaderboard).
 
-**You can skip to the training models part and directly downlaod final data**
+##You can skip to the training models part and directly downlaod final data
 
 ## Instructions to download the data, works on linux:
 - Create your account on Kaggle
