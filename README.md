@@ -24,7 +24,7 @@ This code achieved a MAPE score of 26.57 (16th/84) on the public leaderboard and
   
 ## Training models and making predictions
   
-  - **if the preprocess part didnt run till the end :** Download the "DATA_RAINFALL.zip" file that contains the preprocessed data from : https://drive.google.com/file/d/10xF6B2JB-cEftuSWBBWLvF_FETbXBVpc/view?usp=sharing.
+  - **if didnt run the preprocess part till the end :** Download the "DATA_RAINFALL.zip" file that contains the preprocessed data from : https://drive.google.com/file/d/10xF6B2JB-cEftuSWBBWLvF_FETbXBVpc/view?usp=sharing.
   Unzip the file, make sure the folder is next to `main_model.py`. This folder contains the data after preprocessing.
   
   
