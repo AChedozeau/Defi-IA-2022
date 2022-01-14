@@ -21,7 +21,7 @@ This code achieved a MAPE score of 26.57 (16th/84) on the public leaderboard and
 ## Training models and making predictions
   
   - Download the "DATA_RAINFALL.zip" file from : https://drive.google.com/file/d/10xF6B2JB-cEftuSWBBWLvF_FETbXBVpc/view?usp=sharing , or run the preprocessing part that creates it. Unzip the file, make sure the folder is next to `main_model.py`. This folder contains the data after preprocessing.
-  - Run `main_model.py`, this file runs the feature engineering before training on MLP and LGBM models, creating the prediction .csv files for kaggle ranking afterwards. 
+  - Run `main_model.py`, this file runs the feature engineering before training on MLP and LGBM models, creating prediction .csv files afterwards. 
   
   
   
