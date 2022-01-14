@@ -27,5 +27,8 @@ This code achieved a MAPE score of 26.57 (16th/84) on the public leaderboard and
   
   -Run the following command, this runs the feature engineering before training on MLP and LGBM models, creating prediction .csv files afterwards in results. The training      takes 10 to 15 minutes.
   
+  ```
   python train.py --data_path Data --output_folder Results
+  
+  ```
   
