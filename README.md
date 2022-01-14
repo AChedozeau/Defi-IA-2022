@@ -3,6 +3,8 @@ Défi IA 2022 Kaggle - Local prediction of rainfall using data measure on ground
 
 This code achieved a MAPE score of 26.57 (16th/84) on the public leaderboard and the competition results were a MAPE of 30.13, ranked 27th place (private leaderboard).
 
+**You can skip to the training models part adn directly downlaod final data**
+
 ## Instructions to download the data:
 - Create your account on Kaggle
 - Get your API credentials 
@@ -11,7 +13,6 @@ This code achieved a MAPE score of 26.57 (16th/84) on the public leaderboard and
   
   - Be sure to have the `kaggle` command installed using `pip install kaggle`. If the kaggle command cannot be found, add `~/.local/bin` to your path.
   - Run `dowload_data.sh` in your working directory. A ./DATA_RAINFALL/ directory will be created containing all the data from ground stations and Arpege.
-  - **you can also downlaod the final data in the last part of the read me**
   
 ## Preprocessing the data:
   
@@ -21,11 +22,10 @@ This code achieved a MAPE score of 26.57 (16th/84) on the public leaderboard and
   
 ## Training models and making predictions
   
-  - **if didnt run the preprocess part till the end :** Download the "DATA_RAINFALL.zip" file that contains the preprocessed data from : https://drive.google.com/file/d/10xF6B2JB-cEftuSWBBWLvF_FETbXBVpc/view?usp=sharing.
-  Unzip the file, make sure the folder is next to `main_model.py`. This folder contains the data after preprocessing.
+  - **if didnt run the preprocess part till the end :** Download the "Data.zip" file that contains the preprocessed data from : https://drive.google.com/file/d/10xF6B2JB-cEftuSWBBWLvF_FETbXBVpc/view?usp=sharing.
+  Unzip the file, make sure the "Data" folder is next to `train.py`. This folder contains the data after preprocessing.
   
-  
-  - Run `main_model.py`, this file runs the feature engineering before training on MLP and LGBM models, creating prediction .csv files afterwards. 
+  - Run `train.py` --data_path path to Data --output_folder Results, this runs the feature engineering before training on MLP and LGBM models, creating prediction .csv files afterwards in results.
   
   
   
