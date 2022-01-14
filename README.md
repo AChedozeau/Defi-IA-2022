@@ -23,7 +23,7 @@ This code achieved a MAPE score of 26.57 (16th/84) on the public leaderboard and
    - Open your terminal in your working directory and run the following command : `python preprocess_test.py your_working_directory_path`. Make sure to replace `your_working_directory_path` by your working directory path ! The script fills nans in X_station_test, merges X_station_test with 2D_arpege_test and then reshapes the features to hourly features. A file full_X_test.csv is created in the directory ./DATA_RAINFALL/Test/Test/. Preprocessing the test set could last for around 30 minutes. Note that Y_test is not provided by MeteoFrance. 
   
 ## Training models and making predictions
-  #####if the preprocess part didnt run till the end
+  ####if the preprocess part didnt run till the end
   - Download the "DATA_RAINFALL.zip" file that contains the preprocessed data from : https://drive.google.com/file/d/10xF6B2JB-cEftuSWBBWLvF_FETbXBVpc/view?usp=sharing.
   Unzip the file, make sure the folder is next to `main_model.py`. This folder contains the data after preprocessing.
   
