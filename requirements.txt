@@ -125,7 +125,7 @@ keyring @ file:///tmp/build/80754af9/keyring_1621524581348/work
 kiwisolver==1.3.2
 lazy-object-proxy @ file:///tmp/build/80754af9/lazy-object-proxy_1616529086024/work
 libarchive-c @ file:///tmp/build/80754af9/python-libarchive-c_1617780486945/work
-lightgbm
+lightgbm @ file:///D:/bld/lightgbm_1637422764434/work
 llvmlite==0.36.0
 locket==0.2.1
 lxml @ file:///tmp/build/80754af9/lxml_1616442912239/work
