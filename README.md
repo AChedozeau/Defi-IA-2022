@@ -12,6 +12,9 @@ This code achieved a MAPE score of 26.57 (16th/84) on the public leaderboard and
   - Be sure to have the `kaggle` command installed using `pip install kaggle`. If the kaggle command cannot be found, add `~/.local/bin` to your path.
   - Run `dowload_data.sh` in your working directory. A ./DATA_RAINFALL/ directory will be created containing all the data from ground stations and Arpege.
   
+  
+### Or simply : get our data folder from this link : , then unzip it in the Git folder, you should have a "DATA_RAINFALL" folder.
+  
 ## Preprocessing the data:
   
   - Install the `xarray` python library (plus `netcdf4` and  `h5netcdf` if necessary) to collect Arpege_2D data
