@@ -22,11 +22,10 @@ This code achieved a MAPE score of 26.57 (16th/84) on the public leaderboard and
   
 ## Training models and making predictions
   
-  - **if didnt run the preprocess part till the end :** Download the "Data.zip" file that contains the preprocessed data from : https://drive.google.com/file/d/10xF6B2JB-cEftuSWBBWLvF_FETbXBVpc/view?usp=sharing.
+  - **if you didnt run the preprocess part till the end :** Download the "Data.zip" file that contains the preprocessed data from : https://drive.google.com/file/d/10xF6B2JB-cEftuSWBBWLvF_FETbXBVpc/view?usp=sharing.
   Unzip the file, make sure the "Data" folder is next to `train.py`. This folder contains the data after preprocessing.
   
-  - Run `train.py` --data_path path to Data --output_folder Results, this runs the feature engineering before training on MLP and LGBM models, creating prediction .csv files afterwards in results. The training takes 10 to 15 minutes.
+  -Run the following command, this runs the feature engineering before training on MLP and LGBM models, creating prediction .csv files afterwards in results. The training      takes 10 to 15 minutes.
   
-  
-  
+  python train.py --data_path Data --output_folder Results
   
