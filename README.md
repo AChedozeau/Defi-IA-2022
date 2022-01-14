@@ -15,14 +15,12 @@ This code achieved a MAPE score of 26.57 (16th/84) on the public leaderboard and
 ## Preprocessing the data:
   
   - Install the `xarray` python library (plus `netcdf4` and  `h5netcdf` if necessary) to collect Arpege_2D data
-  - Run `preprocess_train.py` (passing your working directory in argument) to fill nans from X_station_train and Y_train, to merge X_station_train with 2D_arpege_train and then reshape the training features to hourly features (all features at each hour). Two files full_X_train.csv and full_Y_train.csv are created in the directory ./DATA_RAINFALL/Train/Train/. Preprocessing the training set is time-consumming (approximately 6 hours). 
-   - Run `preprocess_test.py` (passing your working directory in argument) to fill nans from X_station_test, to merge X_station_test with 2D_arpege_test and then reshape the features to hourly features. A file full_X_test.csv is created in the directory ./DATA_RAINFALL/Test/Test/. Preprocessing the test set could last for around 30 minutes. Note that Y_test is not provided by MeteoFrance. 
+  - Open your terminal in your working directory and run the following command : `python preprocess_train.py your_working_directory_path`. Make sure to replace `your_working_directory_path` by your working directory path ! The script fills nans from X_station_train and Y_train, merges X_station_train with 2D_arpege_train and then reshapes the training features to hourly features (all features at each hour). Two files full_X_train.csv and full_Y_train.csv are created in the directory ./DATA_RAINFALL/Train/Train/. Preprocessing the training set is time-consumming (approximately 6 hours). 
+   - Open your terminal in your working directory and run the following command : `python preprocess_test.py your_working_directory_path`. Make sure to replace `your_working_directory_path` by your working directory path ! The script fills nans in X_station_test, merges X_station_test with 2D_arpege_test and then reshapes the features to hourly features. A file full_X_test.csv is created in the directory ./DATA_RAINFALL/Test/Test/. Preprocessing the test set could last for around 30 minutes. Note that Y_test is not provided by MeteoFrance. 
   
 ## Training models and making predictions
   
-  If the "Preprocessing the data" isn't complete :
-  - Download the "DATA_RAINFALL.zip" file from : https://drive.google.com/file/d/10xF6B2JB-cEftuSWBBWLvF_FETbXBVpc/view?usp=sharing. Place the "DATA_RAINFALL" folder next to the 
-  `main_model.py`
+  - Download the "DATA_RAINFALL.zip" file from : https://drive.google.com/file/d/10xF6B2JB-cEftuSWBBWLvF_FETbXBVpc/view?usp=sharing , or run the preprocessing part that creates it. Unzip the file, make sure the folder is next to `main_model.py`. This folder contains the data after preprocessing.
   - Run `main_model.py`, this file runs the feature engineering before training on MLP and LGBM models, creating prediction .csv files afterwards. 
   
   
