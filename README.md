@@ -7,7 +7,7 @@ This code achieved a MAPE score of 26.57 (16th/84) on the public leaderboard and
 - Create your account on Kaggle
 - Get your API credentials 
 
-" To use the Kaggle API, sign up for a Kaggle account at https://www.kaggle.com. Then go to the 'Account' tab of your user profile (https://www.kaggle.com/<username>/account) and select 'Create API Token'. This will trigger the download of kaggle.json, a file containing your API credentials. Place this file in the location ~/.kaggle/kaggle.json "
+" To use the Kaggle API, sign up for a Kaggle account at https://www.kaggle.com. Then go to the 'Account' tab of your user profile (https://www.kaggle.com/<username>/account) and select 'Create API Token'. This will trigger the download of kaggle.json, a file containing your API credentials. Place this file in the location ~/.kaggle/kaggle.json " and set its rwx rights to 600.
   
   - Be sure to have the `kaggle` command installed using `pip install kaggle`. If the kaggle command cannot be found, add `~/.local/bin` to your path.
   - Run `dowload_data.sh` in your working directory. A ./DATA_RAINFALL/ directory will be created containing all the data from ground stations and Arpege.
